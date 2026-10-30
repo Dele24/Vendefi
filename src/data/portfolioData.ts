@@ -281,26 +281,3 @@ export const PROCESS_STAGES: ProcessStage[] = [
     focus: "Stable deployment and long-term value"
   }
 ];
-
-export const PHILOSOPHY_PILLARS = [
-  {
-    title: "Understand the Business Problem First",
-    description:
-      "We prioritize diagnosing the commercial bottleneck before selecting technologies or writing code."
-  },
-  {
-    title: "Practical Solutions Over Complexity",
-    description:
-      "We build straightforward, maintainable software rather than adding architectural complexity for its own sake."
-  },
-  {
-    title: "AI Where It Delivers Genuine Value",
-    description:
-      "We deploy AI agents and automation specifically where they reduce human toil, accelerate response times, and improve sales."
-  },
-  {
-    title: "Engineered for Long-Term Growth",
-    description:
-      "Clean architecture, robust APIs, and disciplined testing ensure your systems remain dependable as your business scales."
-  }
-];

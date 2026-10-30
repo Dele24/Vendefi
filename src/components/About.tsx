@@ -4,7 +4,6 @@ import {
   Bot,
   Workflow,
   Network,
-  CheckCircle2,
   Target,
   Sparkles
 } from "lucide-react";
@@ -39,13 +38,6 @@ export default function About() {
         "We connect APIs, databases, payment systems, and business tools to help applications work together reliably.",
       icon: <Network className="w-5 h-5 text-[#0B63F6]" />
     }
-  ];
-
-  const approachPrinciples = [
-    "Understand the business problem before choosing the technology.",
-    "Build practical solutions rather than adding unnecessary complexity.",
-    "Integrate AI where it provides genuine value.",
-    "Design systems with maintainability, reliability, and future growth in mind."
   ];
 
   return (
@@ -131,37 +123,6 @@ export default function About() {
                     {pillar.description}
                   </p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Our Approach: Principles Area */}
-        <div className="max-w-4xl mx-auto p-6 sm:p-10 rounded-3xl bg-white border border-[#E2E8F0] shadow-sm">
-          <div className="mb-6">
-            <span className="text-xs font-mono uppercase tracking-wider text-[#0B63F6] font-semibold block mb-1">
-              OUR APPROACH
-            </span>
-            <h3 className="text-xl sm:text-2xl font-bold text-[#0B132B] tracking-tight">
-              Principles Guiding Our Work
-            </h3>
-            <p className="text-xs sm:text-sm text-slate-500 mt-1">
-              We approach every engagement with clarity, precision, and an emphasis on tangible business results:
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-            {approachPrinciples.map((principle, idx) => (
-              <div
-                key={idx}
-                className="p-4 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] flex items-start gap-3"
-              >
-                <div className="w-5 h-5 rounded-full bg-blue-50 text-[#0B63F6] flex items-center justify-center shrink-0 mt-0.5">
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                </div>
-                <p className="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
-                  {principle}
-                </p>
               </div>
             ))}
           </div>

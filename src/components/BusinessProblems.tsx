@@ -28,8 +28,8 @@ export default function BusinessProblems() {
             <span>OPERATIONAL FRICTION</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-[#0B132B] tracking-tight leading-[1.15] text-balance">
-            Your Business May Not Need More People.{" "}
-            <span className="text-[#0B63F6]">It May Need Better Systems.</span>
+            Your Business Doesn’t Need More People to Function.{" "}
+            <span className="text-[#0B63F6]">It Needs Better Systems.</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed font-normal max-w-2xl mx-auto">
             When workflows stall, customer enquiries go unanswered, or critical data is trapped across separate tools, business growth slows down. We engineer systems that eliminate these friction points.
