@@ -1,21 +1,22 @@
-import { ServiceItem, ProjectItem, TechCategory, ProcessStage } from "@/types";
+import { ServiceItem, ProjectItem, ProcessStage } from "@/types";
 
 export const BRAND_CONFIG = {
   name: "VenDeFi",
-  tagline: "We build technology that moves businesses forward.",
+  tagline: "We build technology that improves sales and reduces operating costs.",
   eyebrow: "SOFTWARE ENGINEERING · AI · AUTOMATION",
-  heroTitle: "We Build Technology That Moves Businesses Forward.",
+  heroTitle: "We Build Technology That Improves Sales and Reduces Operating Costs.",
   heroDescription:
-    "VenDeFi designs and develops software products, AI-powered systems, and intelligent automation that help businesses operate smarter, solve complex problems, and scale with confidence.",
-  aboutHeading: "Technology is only valuable when it solves a real problem.",
+    "We help businesses turn missed enquiries, repetitive tasks, and inefficient processes into opportunities for growth through custom software, AI agents, and intelligent automation.",
+  aboutHeading: "Technology Should Solve Problems. Not Create More.",
   aboutCopy: [
-    "VenDeFi exists to bridge the gap between business challenges and practical technology.",
-    "We combine software engineering, AI, and automation to create digital systems that help businesses simplify operations, improve customer experiences, and build for the future.",
-    "Our approach is straightforward: understand the problem, engineer the right solution, and build systems that create lasting value."
+    "VenDeFi is a software engineering and AI automation company focused on helping businesses solve operational problems through thoughtful technology.",
+    "We design and build software products, intelligent systems, and connected workflows that make business operations simpler, more efficient, and easier to scale."
   ],
-  contactHeading: "Have a Business Problem We Can Solve?",
+  mission:
+    "Our mission is to help businesses move forward by turning complex problems into practical software, useful AI, and reliable automation.",
+  contactHeading: "Let's Talk About What's Holding Your Business Back.",
   contactSupporting:
-    "Let's discuss what you're building, the problem you're trying to solve, and how VenDeFi can help.",
+    "Tell us where your business is losing time, missing opportunities, or struggling with inefficient processes. We'll discuss whether software, AI, or automation can help.",
   contact: {
     phone: "+234 913 025 2726",
     phoneTel: "tel:+2349130252726",
@@ -26,94 +27,121 @@ export const BRAND_CONFIG = {
   }
 };
 
-export const TRUST_TECHNOLOGIES = [
-  { name: "Next.js", category: "Framework" },
-  { name: "React", category: "UI Library" },
-  { name: "TypeScript", category: "Type Safety" },
-  { name: "Node.js", category: "Backend" },
-  { name: "Supabase", category: "Database & Auth" },
-  { name: "PostgreSQL", category: "Relational DB" },
-  { name: "Tailwind CSS", category: "Styling" },
-  { name: "AI & LLM APIs", category: "Intelligence" },
-  { name: "Vercel", category: "Edge Cloud" },
-  { name: "Paystack", category: "Payments" }
+export const BUSINESS_PROBLEMS = [
+  {
+    id: "missed-enquiries",
+    number: "01",
+    title: "Missed Customer Enquiries",
+    description:
+      "Customer enquiries go unanswered or receive delayed responses, allowing potential opportunities to slip away.",
+    impact: "Lost sales & degraded buyer confidence",
+    solution: "AI response agents & automated inbound routing"
+  },
+  {
+    id: "repetitive-work",
+    number: "02",
+    title: "Repetitive Manual Work",
+    description:
+      "Staff spend valuable time on repetitive tasks that could be simplified or automated.",
+    impact: "High overhead & staff burnout",
+    solution: "End-to-end business process automation"
+  },
+  {
+    id: "inconsistent-followups",
+    number: "03",
+    title: "Inconsistent Follow-Ups",
+    description:
+      "Potential customers are forgotten because follow-ups depend entirely on manual effort.",
+    impact: "Leaking pipeline & abandoned leads",
+    solution: "Triggered follow-up cadences & CRM handoffs"
+  },
+  {
+    id: "disconnected-systems",
+    number: "04",
+    title: "Disconnected Business Systems",
+    description:
+      "Information is scattered across different tools, making business processes slower and harder to manage.",
+    impact: "Duplicated data entry & operational delays",
+    solution: "Unified API, payment & database integrations"
+  }
 ];
 
 export const SERVICES: ServiceItem[] = [
   {
-    id: "software-engineering",
+    id: "customer-enquiries",
     number: "01",
-    title: "Software Engineering",
+    title: "Get More From Customer Enquiries",
+    problem:
+      "Prospects reach out on WhatsApp, email, or web channels, but delayed responses cause them to buy elsewhere.",
     description:
-      "Custom digital products, business dashboards, and robust backend systems engineered for long-term scalability and performance.",
+      "We build conversational AI agents and automated lead-qualification systems that respond immediately, qualify intent, and hand hot opportunities directly to your team.",
+    value:
+      "Helps your business respond consistently 24/7, capture every opportunity, and accelerate the sales cycle.",
     capabilities: [
-      "Web applications & platforms",
-      "Custom business dashboards",
-      "Backend systems & APIs",
-      "Database-driven tools",
-      "Internal operations software"
-    ],
-    icon: "Code2"
-  },
-  {
-    id: "ai-solutions",
-    number: "02",
-    title: "AI Solutions & Integration",
-    description:
-      "Practical AI capabilities integrated into products and operations to automate retrieval, document handling, and decision flows.",
-    capabilities: [
-      "AI assistants & copilots",
-      "Information retrieval systems",
-      "Document processing & parsing",
-      "Predictive recommendations",
-      "Custom LLM API integrations"
-    ],
-    icon: "Cpu"
-  },
-  {
-    id: "business-automation",
-    number: "03",
-    title: "Business Process Automation",
-    description:
-      "Intelligent automation workflows and conversational agents that eliminate repetitive tasks and streamline customer journeys.",
-    capabilities: [
-      "WhatsApp automated agents",
-      "Customer enquiry routing",
-      "Lead scoring & qualification",
-      "Multi-step webhook workflows",
-      "Cross-tool operations sync"
+      "AI customer agents",
+      "Enquiry handling",
+      "Lead qualification",
+      "Customer follow-ups",
+      "Sales workflow automation"
     ],
     icon: "Bot"
   },
   {
-    id: "api-integration",
-    number: "04",
-    title: "API Integration & Systems",
+    id: "reduce-manual-work",
+    number: "02",
+    title: "Reduce Manual Work",
+    problem:
+      "Your team spends hours copying information between spreadsheets, documents, and administrative tools.",
     description:
-      "Transforming, routing, and connecting disparate business tools, legacy backends, and modern third-party services.",
+      "We design automated workflows that eliminate repetitive data entry, orchestrate handoffs between departments, and process incoming documents without human intervention.",
+    value:
+      "Reclaims valuable team hours, eliminates human error, and delivers consistent operational turnaround.",
     capabilities: [
-      "Custom API gateways",
-      "Data payload transformations",
-      "Payment gateway integrations",
-      "Third-party CRM & ERP connections",
-      "Real-time webhook orchestration"
+      "Business process automation",
+      "Repetitive administrative tasks",
+      "Document and information processing",
+      "Workflow orchestration",
+      "Connections between existing tools"
     ],
-    icon: "Network"
+    icon: "Workflow"
   },
   {
-    id: "product-engineering",
-    number: "05",
-    title: "Digital Product Development",
+    id: "custom-software",
+    number: "03",
+    title: "Build Software Around Your Business",
+    problem:
+      "Off-the-shelf software forces your company to fit into rigid, generic workflows that don't match your operations.",
     description:
-      "Guiding software from early discovery and clickable prototypes through MVP architecture and production delivery.",
+      "We engineer custom web applications, internal tools, operational dashboards, and digital platforms tailored precisely to your business model.",
+    value:
+      "Gives your company software that fits your exact operating requirements, with full ownership and scalability.",
     capabilities: [
-      "Rapid MVP development",
-      "SaaS product architecture",
-      "Interactive prototyping",
-      "System refactoring & scaling",
-      "Continuous technical delivery"
+      "Custom web applications",
+      "Internal business tools",
+      "Dashboards",
+      "Business platforms",
+      "Digital product development"
     ],
-    icon: "Layers"
+    icon: "Code2"
+  },
+  {
+    id: "connect-systems",
+    number: "04",
+    title: "Connect Your Business Systems",
+    problem:
+      "Your payments, database, CRM, and communication tools operate in silos, creating friction and blind spots.",
+    description:
+      "We build robust API integrations and middleware that bridge your disparate software tools, ensuring data synchronizes reliably and in real time.",
+    value:
+      "Eliminates duplicate data entry, speeds up cross-departmental operations, and keeps your data unified.",
+    capabilities: [
+      "API integrations",
+      "Payment integrations",
+      "Database-backed applications",
+      "CRM and operational integrations",
+      "Connections between business systems"
+    ],
+    icon: "Network"
   }
 ];
 
@@ -125,25 +153,25 @@ export const PROJECTS: ProjectItem[] = [
     category: "AI · Health Technology · Pharmacy Discovery",
     tagline: "Making Medicine Discovery More Accessible",
     description:
-      "An AI-powered pharmacy discovery platform designed to help people find medicines, explore pharmacy availability, and identify potential sources for their medication.",
+      "An AI-powered pharmacy discovery platform designed to help people locate genuine medicines, check verified pharmacy availability, and eliminate manual phone calls during urgent health needs.",
     projectUrl: "https://pharmachains.ai/",
     challenge:
-      "Finding specific medicines can require time-consuming searches and calls to multiple pharmacies.",
+      "Finding specific or rare medications traditionally requires patients to visit or call multiple pharmacies in person, creating critical delays and risk of counterfeit drugs.",
     approach:
-      "A digital platform designed to simplify medicine discovery and connect users with relevant pharmacy information.",
+      "Engineered an intelligent discovery engine that indexes verified pharmacies, maps geographic availability, and allows users to search medicines in natural language.",
     experience:
-      "Explore the live platform to understand its search experience, product interface, and approach to pharmacy discovery.",
+      "Explore the live platform to see the search experience, structured catalog interface, and consumer discovery workflow.",
     technologies: ["Next.js", "AI Search", "Health Tech", "TypeScript", "Tailwind CSS"],
-    scope: "Digital Platform Design & Pharmacy Discovery UX",
+    scope: "Platform Architecture, Natural Language Search UX & Directory Systems",
     keyFeatures: [
-      "Natural language medicine and active ingredient search",
-      "Real-time pharmacy availability and inventory indicator",
-      "Geographic source mapping for nearby pharmacies",
-      "Clean, patient-centric medicine information display"
+      "Natural language medicine and ingredient search",
+      "Real-time pharmacy availability indicator",
+      "Location-based pharmacy mapping",
+      "Patient-friendly verification and information display"
     ],
     architectureDetails: {
       clientLayer: "Responsive search-first web interface with dynamic filtering",
-      processingLayer: "AI medicine lookup and catalog aggregation pipeline",
+      processingLayer: "AI lookup and directory catalog aggregation pipeline",
       dataStore: "Verified pharmacy directory and availability indexes"
     },
     previewColor: "#0B63F6",
@@ -155,29 +183,29 @@ export const PROJECTS: ProjectItem[] = [
     id: "xform",
     slug: "xform",
     name: "Xform",
-    category: "AI · Developer Tools · API Infrastructure",
+    category: "Developer Tools · API Infrastructure · AI Agents",
     tagline: "Simplifying API Integration for AI Applications",
     description:
-      "An API platform designed to help developers transform, route, and combine API operations using AI-generated logic and production-oriented tooling.",
+      "A developer platform engineered to transform, route, and combine API operations instantly, converting raw cURL commands into compiled, ultra-low-latency endpoints for AI agents.",
     projectUrl: "https://xform.sh/",
     challenge:
-      "Integrating multiple APIs can introduce unnecessary backend complexity and maintenance work.",
+      "AI agents and modern apps need to consume diverse third-party APIs, but writing and maintaining bespoke backend proxy glue introduces heavy latency and maintenance overhead.",
     approach:
-      "A platform that streamlines API transformations and enables developers to create endpoints with generated logic.",
+      "Architected a platform where developers deploy compiled logic endpoints with near-zero cold starts (~0.04ms overhead) and automated payload transformation.",
     experience:
-      "Explore the live platform to understand its developer workflow, interface, and API integration capabilities.",
+      "Explore the live developer console to see the endpoint deployment workflow, live code compilation, and interactive transformation interface.",
     technologies: ["API Transformation", "Developer Tooling", "TypeScript", "Rust Performance"],
-    scope: "Developer Experience, UI Workflows & API Transformation",
+    scope: "Developer Console, Endpoint Transformation Engine & High-Performance Routing",
     keyFeatures: [
-      "Payload transformation using TypeScript and compiled execution",
-      "Dynamic endpoint routing and multi-API composition",
-      "Low-latency proxy execution for production workloads",
-      "Interactive developer console and live schema validation"
+      "Instant cURL-to-endpoint deployment pipeline",
+      "Compiled transformation logic with near-zero latency overhead",
+      "Zero cold-start serverless architecture",
+      "Interactive developer console and live schema inspection"
     ],
     architectureDetails: {
       clientLayer: "Developer console and endpoint management interface",
-      processingLayer: "Sub-millisecond low-latency proxy execution engine",
-      dataStore: "Schema registry, route configurations, and pipeline rules"
+      processingLayer: "Low-latency compiled execution engine",
+      dataStore: "Schema registry, route configurations, and transform rules"
     },
     previewColor: "#0B63F6",
     statusBadge: "Live Platform",
@@ -188,135 +216,91 @@ export const PROJECTS: ProjectItem[] = [
     id: "foodnow",
     slug: "foodnow",
     name: "FoodNow",
-    category: "Food Technology · Digital Products · Web Development",
+    category: "Food Technology · Digital Products · Conversational Commerce",
     tagline: "A Digital Experience for Food Ordering",
     description:
-      "A food-ordering project focused on presenting the service, helping customers understand the offering, and directing them toward the next step in the ordering journey.",
+      "A food ordering web platform that bridges online restaurant browsing with conversational WhatsApp order fulfillment, removing app-download friction for diners.",
     projectUrl: "https://foodnow-landing-page.vercel.app/",
     challenge:
-      "Presenting a food-ordering service clearly and making it easy for potential customers to understand how to use it.",
+      "Local restaurant delivery platforms struggle with high customer drop-off when forcing users to download heavy mobile apps and create accounts just to place a simple meal order.",
     approach:
-      "A dedicated landing page designed to communicate the service and guide visitors through the customer journey.",
+      "Built a lightweight, responsive web showcase that guides customers through curated menus and transitions seamlessly into direct, automated WhatsApp ordering.",
     experience:
-      "Explore the live website to see the design, page structure, and calls to action.",
+      "Explore the live web application to experience the menu discovery, local restaurant showcase, and conversion funnel into WhatsApp.",
     technologies: ["Next.js", "React", "Tailwind CSS", "WhatsApp Workflow"],
-    scope: "Landing Page Architecture, Customer Journey & Conversion UX",
+    scope: "Product Landing Experience, Restaurant Showcases & WhatsApp Conversion Funnel",
     keyFeatures: [
-      "Clear value proposition presentation for local food delivery",
-      "Frictionless onboarding directing visitors into the WhatsApp ordering journey",
-      "Showcase of trusted restaurant partnerships and popular menus",
-      "Fast-loading, mobile-optimized digital experience"
+      "App-free food ordering journey directly on WhatsApp",
+      "Curated local restaurant showcases and menu browsing",
+      "Optimized mobile conversion funnels",
+      "Instant restaurant and delivery courier routing"
     ],
     architectureDetails: {
-      clientLayer: "Responsive Next.js web landing experience",
-      processingLayer: "Customer journey funnels and WhatsApp entry points",
+      clientLayer: "Responsive Next.js web application with restaurant menus",
+      processingLayer: "Customer onboarding funnels and WhatsApp intent triggers",
       dataStore: "Structured restaurant showcase and promotional content"
     },
     previewColor: "#0B63F6",
-    statusBadge: "Live Landing Page",
+    statusBadge: "Live Web App",
     imageUrl: "/images/projects/foodnow.png",
     imageAlt: "FoodNow platform interface — Good Food. Right Now. Order on WhatsApp"
-  }
-];
-
-export const TECHNOLOGIES: TechCategory[] = [
-  {
-    id: "frontend",
-    category: "Frontend Engineering",
-    description: "Modern, type-safe, and accessible interfaces built for speed and responsiveness.",
-    items: [
-      { name: "TypeScript", role: "Type Safety & Architecture", featured: true },
-      { name: "React", role: "Component Systems", featured: true },
-      { name: "Next.js", role: "App Router & SSR", featured: true },
-      { name: "Tailwind CSS", role: "Utility Design Tokens", featured: true },
-      { name: "HTML / CSS", role: "Semantic Foundation" },
-      { name: "JavaScript", role: "Modern Runtime" }
-    ]
-  },
-  {
-    id: "backend",
-    category: "Backend & Systems",
-    description: "Reliable API endpoints, routing engines, and server architectures.",
-    items: [
-      { name: "Node.js", role: "Server Runtime", featured: true },
-      { name: "Next.js APIs", role: "Route Handlers & Edge", featured: true },
-      { name: "PostgreSQL", role: "Relational Persistence", featured: true },
-      { name: "Supabase", role: "Database & Backend as a Service", featured: true }
-    ]
-  },
-  {
-    id: "ai-integrations",
-    category: "AI & Integrations",
-    description: "Intelligent language models, automated pipelines, and communication gateways.",
-    items: [
-      { name: "LLM APIs", role: "Reasoning & Inference", featured: true },
-      { name: "Webhooks", role: "Event-driven Triggers", featured: true },
-      { name: "WhatsApp APIs", role: "Conversational Workflows", featured: true },
-      { name: "Paystack", role: "Payment Processing", featured: true }
-    ]
-  },
-  {
-    id: "deployment",
-    category: "Deployment & Infrastructure",
-    description: "Automated continuous delivery, version management, and edge hosting.",
-    items: [
-      { name: "Git & GitHub", role: "Version Control & CI/CD", featured: true },
-      { name: "Vercel", role: "Global Edge Infrastructure", featured: true },
-      { name: "Render", role: "Cloud Services" }
-    ]
   }
 ];
 
 export const PROCESS_STAGES: ProcessStage[] = [
   {
     number: "01",
-    title: "Discover",
-    summary: "Understand the core business problem, workflows, users, and tangible success metrics.",
-    deliverables: ["Scope Definition", "Business Objectives", "Technical Feasibility"],
+    title: "DISCOVER",
+    summary:
+      "Understand the business problem, existing workflows, constraints, and desired outcomes.",
+    deliverables: ["Problem Definition", "Workflow Audit", "Measurable Objectives"],
     focus: "Strategic alignment before writing any code"
   },
   {
     number: "02",
-    title: "Design",
-    summary: "Plan the user journey, system architecture, database schema, and integration topology.",
-    deliverables: ["System Schematics", "Component Systems", "API Contracts"],
+    title: "DESIGN",
+    summary:
+      "Define the solution, user experience, architecture, and implementation plan.",
+    deliverables: ["Solution Architecture", "User Experience Plan", "Integration Blueprint"],
     focus: "Clarity of architecture and modular foundation"
   },
   {
     number: "03",
-    title: "Build",
-    summary: "Develop type-safe software, configure AI models, and assemble automated workflow pipelines.",
-    deliverables: ["Production Codebase", "API Integration", "Automated Pipelines"],
+    title: "BUILD",
+    summary:
+      "Develop, integrate, and test the software, AI capabilities, or automated workflows.",
+    deliverables: ["Production Codebase", "AI & Workflow Pipelines", "End-to-End Testing"],
     focus: "Rigorous engineering and clean maintainability"
   },
   {
     number: "04",
-    title: "Deploy & Improve",
-    summary: "Launch the solution with verified telemetry, ensure smooth operations, and iterate on feedback.",
-    deliverables: ["Production Release", "Monitoring Setup", "Continuous Iteration"],
+    title: "DEPLOY & IMPROVE",
+    summary:
+      "Launch the solution, verify that it works correctly, and make improvements based on operational needs.",
+    deliverables: ["Live Production Release", "Operational Verification", "Ongoing Optimization"],
     focus: "Stable deployment and long-term value"
   }
 ];
 
 export const PHILOSOPHY_PILLARS = [
   {
-    title: "Practical Problem-Solving",
+    title: "Understand the Business Problem First",
     description:
-      "We design systems around concrete operational goals, ensuring every feature directly moves the business forward."
+      "We prioritize diagnosing the commercial bottleneck before selecting technologies or writing code."
   },
   {
-    title: "Thoughtful Engineering",
+    title: "Practical Solutions Over Complexity",
     description:
-      "Clean separation of concerns, strict type safety, and predictable error handling keep systems dependable over time."
+      "We build straightforward, maintainable software rather than adding architectural complexity for its own sake."
   },
   {
-    title: "Useful AI Integration",
+    title: "AI Where It Delivers Genuine Value",
     description:
-      "We implement AI where it delivers measurable efficiency — automating data extraction, routing, and customer response."
+      "We deploy AI agents and automation specifically where they reduce human toil, accelerate response times, and improve sales."
   },
   {
-    title: "Reliable Automation",
+    title: "Engineered for Long-Term Growth",
     description:
-      "Automating repetitive workflows reduces operational overhead, eliminates human error, and accelerates response cycles."
+      "Clean architecture, robust APIs, and disciplined testing ensure your systems remain dependable as your business scales."
   }
 ];

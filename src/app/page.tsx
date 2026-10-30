@@ -1,10 +1,9 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import BusinessProblems from "@/components/BusinessProblems";
 import SelectedWork from "@/components/SelectedWork";
-import TrustStrip from "@/components/TrustStrip";
 import Services from "@/components/Services";
-import Technologies from "@/components/Technologies";
 import Process from "@/components/Process";
 import About from "@/components/About";
 import ContactSection from "@/components/ContactSection";
@@ -16,10 +15,9 @@ export default function Home() {
       <Navbar />
       <main id="main-content" className="flex-1 flex flex-col">
         <Hero />
+        <BusinessProblems />
         <SelectedWork />
-        <TrustStrip />
         <Services />
-        <Technologies />
         <Process />
         <About />
         <ContactSection />

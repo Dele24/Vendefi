@@ -5,17 +5,19 @@ import { PROJECTS } from "@/data/portfolioData";
 import { ProjectItem } from "@/types";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
+import { FolderGit2 } from "lucide-react";
 
 export default function SelectedWork() {
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
 
   return (
-    <section id="work" className="py-20 md:py-32 bg-[#F8FAFC] border-y border-[#E2E8F0]/70">
+    <section id="work" className="py-20 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Centered Section Header inspired by Reference */}
+        {/* Centered Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-14 md:mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#EBF3FE] text-[#0B63F6] text-xs font-mono font-semibold uppercase tracking-wider mb-4 border border-[#BFDBFE]">
-            <span>SELECTED CLIENT &amp; PRODUCT WORK</span>
+            <FolderGit2 className="w-3.5 h-3.5" />
+            <span>PROJECTS WE HAVE HELPED BUILD</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-[#0B132B] tracking-tight leading-[1.15] text-balance">
             Built to Solve.{" "}
@@ -35,13 +37,6 @@ export default function SelectedWork() {
               onSelectProject={(proj) => setSelectedProject(proj)}
             />
           ))}
-        </div>
-
-        {/* Informational Integrity Note */}
-        <div className="mt-12 text-center">
-          <p className="text-xs text-[#64748B] font-mono">
-            Selected live platforms and web deployments. Visit the live platforms to explore the active product experience.
-          </p>
         </div>
       </div>
 

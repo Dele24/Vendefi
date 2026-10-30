@@ -36,18 +36,18 @@ export default function Footer() {
             </span>
             <ul className="space-y-2 text-xs font-medium text-slate-600">
               <li>
+                <a href="#problems" className="hover:text-[#0B63F6] transition-colors">
+                  Problems We Solve
+                </a>
+              </li>
+              <li>
                 <a href="#work" className="hover:text-[#0B63F6] transition-colors">
-                  Selected Work
+                  Our Work
                 </a>
               </li>
               <li>
                 <a href="#services" className="hover:text-[#0B63F6] transition-colors">
                   Services
-                </a>
-              </li>
-              <li>
-                <a href="#technologies" className="hover:text-[#0B63F6] transition-colors">
-                  Technologies
                 </a>
               </li>
               <li>
@@ -62,7 +62,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#contact" className="hover:text-[#0B63F6] transition-colors">
-                  Start a Project
+                  Contact
                 </a>
               </li>
             </ul>
@@ -71,7 +71,7 @@ export default function Footer() {
           {/* Service Links */}
           <div className="lg:col-span-4 space-y-3">
             <span className="text-xs font-mono uppercase tracking-wider text-[#0B132B] font-semibold block">
-              Core Capabilities
+              Services &amp; Solutions
             </span>
             <ul className="space-y-2 text-xs text-slate-600">
               {SERVICES.map((s) => (
@@ -88,27 +88,29 @@ export default function Footer() {
                 DIRECT CONTACT
               </span>
               <a
-                href="#contact"
+                href={BRAND_CONFIG.contact.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-xs font-semibold text-[#0B63F6] hover:underline"
               >
-                Call, WhatsApp, or Email Our Team →
+                Discuss Your Project on WhatsApp →
               </a>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar: Dynamic Copyright & Back-to-top */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
-          <p>© {currentYear} VenDeFi. All rights reserved.</p>
-
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-mono">
+          <div>
+            &copy; {currentYear} {BRAND_CONFIG.name}. All rights reserved.
+          </div>
           <div className="flex items-center gap-6">
-            <span>Precision software engineering &amp; AI systems.</span>
             <a
-              href="#"
-              className="inline-flex items-center gap-1 text-[#0B132B] hover:text-[#0B63F6] transition-colors font-medium"
+              href="#top"
+              className="inline-flex items-center gap-1.5 hover:text-[#0B63F6] transition-colors"
               aria-label="Back to top"
             >
-              <span>Back to top</span>
+              <span>Back to Top</span>
               <ArrowUp className="w-3.5 h-3.5" />
             </a>
           </div>

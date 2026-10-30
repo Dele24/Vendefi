@@ -45,17 +45,27 @@ export default function ProjectCard({ project, onSelectProject }: ProjectCardPro
             {project.tagline}
           </p>
 
-          {/* Description */}
-          <p className="mt-3.5 text-sm text-[#475569] leading-relaxed line-clamp-3">
+          {/* Strengthened Problem & Solution Description */}
+          <p className="mt-3.5 text-xs sm:text-sm text-[#475569] leading-relaxed">
             {project.description}
           </p>
 
-          {/* Technology Labels */}
-          <div className="mt-5 flex flex-wrap gap-1.5">
+          {/* Solution Highlight Box */}
+          <div className="mt-4 p-3 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs text-slate-600">
+            <span className="text-[10.5px] font-mono uppercase text-[#0B63F6] font-semibold block mb-1">
+              Core Delivery
+            </span>
+            <span className="font-medium text-[#0B132B] line-clamp-2">
+              {project.approach}
+            </span>
+          </div>
+
+          {/* Technology Badges */}
+          <div className="mt-4 flex flex-wrap gap-1.5">
             {project.technologies.map((tech) => (
               <span
                 key={tech}
-                className="px-2.5 py-0.5 rounded text-[11px] font-mono font-medium bg-[#F8FAFC] text-[#334155] border border-[#E2E8F0]"
+                className="px-2.5 py-0.5 rounded text-[11px] font-mono font-medium bg-white text-[#334155] border border-[#E2E8F0]"
               >
                 {tech}
               </span>
@@ -64,7 +74,7 @@ export default function ProjectCard({ project, onSelectProject }: ProjectCardPro
         </div>
       </div>
 
-      {/* Card Actions Footer: Separate Case Study & Live External Link */}
+      {/* Card Actions Footer: Case Study & Live External Link */}
       <div className="px-6 sm:px-7 pb-6 pt-4 border-t border-[#F1F5F9] flex items-center justify-between gap-3">
         {/* Internal Case-Study Action */}
         <button

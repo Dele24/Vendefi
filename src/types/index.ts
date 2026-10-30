@@ -2,9 +2,20 @@ export interface ServiceItem {
   id: string;
   number: string;
   title: string;
+  problem?: string;
   description: string;
+  value?: string;
   capabilities: string[];
   icon: string;
+}
+
+export interface BusinessProblemItem {
+  id: string;
+  number: string;
+  title: string;
+  description: string;
+  impact?: string;
+  solution?: string;
 }
 
 export interface ProjectItem {

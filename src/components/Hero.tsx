@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight, Check } from "lucide-react";
+import { BRAND_CONFIG } from "@/data/portfolioData";
 
 export default function Hero() {
   return (
@@ -20,35 +21,35 @@ export default function Hero() {
         {/* Eyebrow Badge */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#DBEAFE] text-[11px] sm:text-xs font-mono font-semibold text-[#0B63F6] tracking-wider uppercase mb-6 shadow-xs">
           <span className="w-1.5 h-1.5 rounded-full bg-[#0B63F6]" />
-          <span>SOFTWARE ENGINEERING · AI · AUTOMATION</span>
+          <span>{BRAND_CONFIG.eyebrow}</span>
         </div>
 
-        {/* Main Headline */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[62px] font-extrabold text-[#0B132B] tracking-[-0.035em] leading-[1.12] text-balance max-w-4xl">
+        {/* Primary H1 Headline */}
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[58px] xl:text-[62px] font-extrabold text-[#0B132B] tracking-[-0.035em] leading-[1.12] text-balance max-w-4xl">
           We Build Technology That{" "}
-          <span className="text-[#0B63F6]">Moves Businesses</span> Forward.
+          <span className="text-[#0B63F6]">Improves Sales</span> and Reduces Operating Costs.
         </h1>
 
         {/* Supporting Copy */}
-        <p className="mt-6 text-base sm:text-lg md:text-xl text-[#475569] leading-relaxed max-w-2xl font-normal text-balance">
-          VenDeFi designs and develops software products, AI-powered systems, and intelligent automation that help businesses operate smarter, solve complex problems, and scale with confidence.
+        <p className="mt-6 text-base sm:text-lg md:text-xl text-[#475569] leading-relaxed max-w-3xl font-normal text-balance">
+          {BRAND_CONFIG.heroDescription}
         </p>
 
         {/* CTA Buttons */}
         <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full sm:w-auto">
           <a
-            href="#work"
+            href="#contact"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-[#0B63F6] text-white text-sm font-semibold hover:bg-[#084EC2] transition-all duration-200 shadow-sm shadow-blue-500/20 hover:shadow-md hover:shadow-blue-500/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0B63F6]"
           >
-            <span>Explore Our Work</span>
+            <span>Discuss Your Business</span>
             <ArrowRight className="w-4 h-4 opacity-90" />
           </a>
 
           <a
-            href="#contact"
+            href="#work"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-white border border-[#CBD5E1] text-[#0B132B] text-sm font-semibold hover:bg-[#F8FAFC] hover:border-[#94A3B8] transition-all duration-200 shadow-xs focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0B63F6]"
           >
-            <span>Let&apos;s Discuss Your Project</span>
+            <span>Explore Our Work</span>
           </a>
         </div>
 

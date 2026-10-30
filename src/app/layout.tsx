@@ -16,21 +16,22 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#FAF9F6"
+  themeColor: "#FFFFFF"
 };
 
 export const metadata: Metadata = {
-  title: "VenDeFi | Software Engineering, AI & Automation",
+  title: "VenDeFi | Technology That Improves Sales & Reduces Operating Costs",
   description:
-    "VenDeFi builds custom software, AI-powered systems, and business automation solutions that help businesses operate smarter and grow.",
+    "VenDeFi builds custom software, AI agents, and intelligent business automation solutions that help companies capture more enquiries, eliminate manual work, and scale efficiently.",
   keywords: [
     "Software Engineering",
     "AI Agents",
     "Business Automation",
-    "Digital Product Engineering",
     "VenDeFi",
+    "Conversational AI",
+    "Sales Automation",
     "Custom Software Development",
-    "Workflow Automation"
+    "Workflow Optimization"
   ],
   authors: [{ name: "VenDeFi" }],
   creator: "VenDeFi",
@@ -40,18 +41,18 @@ export const metadata: Metadata = {
     follow: true
   },
   openGraph: {
-    title: "VenDeFi | Software Engineering, AI & Automation",
+    title: "VenDeFi | Technology That Improves Sales & Reduces Operating Costs",
     description:
-      "VenDeFi builds custom software, AI-powered systems, and business automation solutions that help businesses operate smarter and grow.",
+      "VenDeFi builds custom software, AI agents, and intelligent business automation solutions that help companies capture more enquiries, eliminate manual work, and scale efficiently.",
     type: "website",
     locale: "en_US",
     siteName: "VenDeFi"
   },
   twitter: {
     card: "summary_large_image",
-    title: "VenDeFi | Software Engineering, AI & Automation",
+    title: "VenDeFi | Technology That Improves Sales & Reduces Operating Costs",
     description:
-      "VenDeFi builds custom software, AI-powered systems, and business automation solutions that help businesses operate smarter and grow."
+      "VenDeFi builds custom software, AI agents, and intelligent business automation solutions that help companies capture more enquiries, eliminate manual work, and scale efficiently."
   },
   icons: {
     icon: "/icon.svg",
@@ -61,15 +62,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased`}
-    >
-      <body className="min-h-screen bg-[#FAF9F6] text-[#171717] font-sans selection:bg-[#FF6B35] selection:text-white flex flex-col">
+    <html lang="en" className="scroll-smooth" id="top">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-[#F8FAFC] text-[#0B132B] font-sans selection:bg-[#0B63F6] selection:text-white`}
+      >
         {children}
       </body>
     </html>
